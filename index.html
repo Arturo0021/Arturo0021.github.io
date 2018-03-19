@@ -4,7 +4,15 @@
   <title>Ivan Arturo</title>
 </head>
 <body>
-  <h2>Bienvenido a mi Pagina Personal</h2>
+  <button id="boton">Click!</button>
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+     $("#boton").on("click", function(){
+       alert("Bienvenido a mi pagina en github"); 
+     }); 
+    });
+  </script>
 </body>
 </html>
