@@ -1,0 +1,92 @@
+2021-01-15 04:45:54.139 24869-24869/mx.com.liverpool.shoppingapp.qa D/SearchBarFragment: beforeTextChanged: 
+2021-01-15 04:45:54.141 24869-24869/mx.com.liverpool.shoppingapp.qa D/SearchBarFragment: onTextChanged: 
+2021-01-15 04:45:54.143 24869-24869/mx.com.liverpool.shoppingapp.qa D/SearchBarFragment: afterTextChanged: 
+2021-01-15 04:45:54.160 24869-25719/mx.com.liverpool.shoppingapp.qa V/AtgAdapterRequest: Requesting the url: https://shopappqa.liverpool.com.mx/appclienteservices/services/v4/checkout/cleanCheckoutExpress
+2021-01-15 04:45:54.164 24869-25094/mx.com.liverpool.shoppingapp.qa V/AtgAdapterRequest: Body: {}
+2021-01-15 04:45:54.179 24869-24869/mx.com.liverpool.shoppingapp.qa W/.shoppingapp.q: Accessing hidden field Landroid/view/animation/Animation;->mListener:Landroid/view/animation/Animation$AnimationListener; (greylist-max-p, reflection, denied)
+2021-01-15 04:45:54.180 24869-24869/mx.com.liverpool.shoppingapp.qa E/FragmentManager: No field with the name mListener is found in Animation class
+    java.lang.NoSuchFieldException: No field mListener in class Landroid/view/animation/Animation; (declaration of 'android.view.animation.Animation' appears in /system/framework/framework.jar!classes3.dex)
+        at java.lang.Class.getDeclaredField(Native Method)
+        at androidx.fragment.app.FragmentManagerImpl.getAnimationListener(FragmentManager.java:1301)
+        at androidx.fragment.app.FragmentManagerImpl.animateRemoveFragment(FragmentManager.java:1638)
+        at androidx.fragment.app.FragmentManagerImpl.moveToState(FragmentManager.java:1548)
+        at androidx.fragment.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1784)
+        at androidx.fragment.app.BackStackRecord.executeOps(BackStackRecord.java:797)
+        at androidx.fragment.app.FragmentManagerImpl.executeOps(FragmentManager.java:2625)
+        at androidx.fragment.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2411)
+        at androidx.fragment.app.FragmentManagerImpl.removeRedundantOperationsAndExecute(FragmentManager.java:2366)
+        at androidx.fragment.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2273)
+        at androidx.fragment.app.FragmentManagerImpl$1.run(FragmentManager.java:733)
+        at android.os.Handler.handleCallback(Handler.java:938)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:223)
+        at android.app.ActivityThread.main(ActivityThread.java:7656)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+2021-01-15 04:45:54.180 24869-24869/mx.com.liverpool.shoppingapp.qa D/PdpFragment: onCreateView: 
+2021-01-15 04:45:54.329 24869-24869/mx.com.liverpool.shoppingapp.qa W/PdpFragment: Issue, this not collection
+    java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object java.util.HashMap.get(java.lang.Object)' on a null object reference
+        at mx.com.liverpool.shoppingapp.browse.pdp.view.PdpFragment.onCreateView(PdpFragment.java:562)
+        at androidx.fragment.app.Fragment.performCreateView(Fragment.java:2439)
+        at androidx.fragment.app.FragmentManagerImpl.moveToState(FragmentManager.java:1460)
+        at androidx.fragment.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1784)
+        at androidx.fragment.app.FragmentManagerImpl.moveToState(FragmentManager.java:1852)
+        at androidx.fragment.app.BackStackRecord.executeOps(BackStackRecord.java:802)
+        at androidx.fragment.app.FragmentManagerImpl.executeOps(FragmentManager.java:2625)
+        at androidx.fragment.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2411)
+        at androidx.fragment.app.FragmentManagerImpl.removeRedundantOperationsAndExecute(FragmentManager.java:2366)
+        at androidx.fragment.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2273)
+        at androidx.fragment.app.FragmentManagerImpl$1.run(FragmentManager.java:733)
+        at android.os.Handler.handleCallback(Handler.java:938)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:223)
+        at android.app.ActivityThread.main(ActivityThread.java:7656)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+2021-01-15 04:45:54.341 24869-24869/mx.com.liverpool.shoppingapp.qa D/PdpFragment: onCreateView: AtgAdapterDto{status=Status{status='OK', statusCode=0, errorDescription='null', detailedErrorDescription='null'}}
+2021-01-15 04:45:54.342 24869-24869/mx.com.liverpool.shoppingapp.qa V/AtgAdapterRequest: Requesting the url: https://shopappqa.liverpool.com.mx/appclienteservices/services/v2/gifttable/home/getUserEvents?profileId=2033886363&emailId=xcode.arturo%40gmail.com
+2021-01-15 04:45:54.430 24869-24869/mx.com.liverpool.shoppingapp.qa D/AndroidRuntime: Shutting down VM
+    
+    
+    --------- beginning of crash
+2021-01-15 04:45:54.431 24869-24869/mx.com.liverpool.shoppingapp.qa E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: mx.com.liverpool.shoppingapp.qa, PID: 24869
+    java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.util.SparseArray.get(int)' on a null object reference
+        at androidx.fragment.app.FragmentManagerImpl.getFragment(FragmentManager.java:936)
+        at androidx.fragment.app.FragmentStatePagerAdapter.restoreState(FragmentStatePagerAdapter.java:217)
+        at androidx.viewpager.widget.ViewPager.onRestoreInstanceState(ViewPager.java:1461)
+        at android.view.View.dispatchRestoreInstanceState(View.java:20735)
+        at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3914)
+        at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3920)
+        at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3920)
+        at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3920)
+        at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3920)
+        at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3920)
+        at android.view.View.restoreHierarchyState(View.java:20713)
+        at androidx.fragment.app.Fragment.restoreViewState(Fragment.java:494)
+        at androidx.fragment.app.FragmentManagerImpl.moveToState(FragmentManager.java:1486)
+        at androidx.fragment.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1784)
+        at androidx.fragment.app.FragmentManagerImpl.moveToState(FragmentManager.java:1852)
+        at androidx.fragment.app.BackStackRecord.executeOps(BackStackRecord.java:802)
+        at androidx.fragment.app.FragmentManagerImpl.executeOps(FragmentManager.java:2625)
+        at androidx.fragment.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2411)
+        at androidx.fragment.app.FragmentManagerImpl.removeRedundantOperationsAndExecute(FragmentManager.java:2366)
+        at androidx.fragment.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2273)
+        at androidx.fragment.app.FragmentManagerImpl$1.run(FragmentManager.java:733)
+        at android.os.Handler.handleCallback(Handler.java:938)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:223)
+        at android.app.ActivityThread.main(ActivityThread.java:7656)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+2021-01-15 04:45:54.990 24869-25094/mx.com.liverpool.shoppingapp.qa V/AtgAdapterRequest: Service response: {"status":{"status":"OK","statusCode":0}}
+2021-01-15 04:45:54.990 24869-25094/mx.com.liverpool.shoppingapp.qa V/AtgAdapterRequest: Request elapsed time (ms): 829
+2021-01-15 04:45:54.990 24869-25094/mx.com.liverpool.shoppingapp.qa W/Probando:: headers:GTA_RG_ID=2033886363;Version=1;Domain=.liverpool.com.mx;Path=/
+2021-01-15 04:45:58.463 24869-24869/mx.com.liverpool.shoppingapp.qa W/GAv4: syncDispatchLocalHits timed out: java.util.concurrent.TimeoutException
+    
+    --------- beginning of system
+2021-01-15 04:45:58.619 24869-25002/mx.com.liverpool.shoppingapp.qa E/CrashlyticsCore: Error occurred sending report com.crashlytics.android.core.SessionReport@273bea
+2021-01-15 04:45:58.624 24869-24869/mx.com.liverpool.shoppingapp.qa I/Process: Sending signal. PID: 24869 SIG: 9
